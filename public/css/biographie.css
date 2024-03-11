@@ -1,0 +1,130 @@
+section {
+    position: relative;
+    width: 100%;
+    padding: 50px 90px 40px 90px;
+    color: #fff;
+}
+
+section.intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.imgTitre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgTitre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tableau {
+    width: 100%;
+}
+
+.cellule {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border-top: 1px solid rgb(255, 255, 255); */
+    border-bottom: 1px solid rgb(255, 255, 255);
+    line-height: 2.5em;
+}
+
+.cellule h3 {
+    font-family: "Kanit", sans-serif;
+    font-size: clamp(14px, 1.8vw, 1.8rem);
+    line-height: 2.5em;
+    font-weight: 400;
+}
+
+
+section.intro p {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(12px, 1.3vw, 1.3rem);
+}
+
+.description {
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #site-content {
+        margin-bottom: 70px;
+    }
+    section {
+        padding: 50px 50px 40px 50px;
+    }
+    section.intro {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+
+}
+
+section.contenu {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-weight: 300;
+    font-size: clamp(14px, 1.4vw, 1.5em);
+    line-height: 1.8em;
+}
+section.white {
+    background-color: var(--white);
+    color: #000;
+    padding-top: 150px;
+    margin-bottom: 90px;
+    padding-bottom: 90px;
+}
+section.contenu:nth-child(even) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+section.contenu:last-child {
+    padding-bottom: 120px;
+}
+
+.custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 83px;
+}
+.custom-shape-divider-top .shape-fill {
+    fill: #000000;
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 30px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #000;
+}

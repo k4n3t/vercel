@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= page_title %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <div id="site-content">
+
+    <%- include('partials/header') %>
+
+    <main>
+      <div class="main">
+        <video src="image/home.mp4#t=10" autoplay muted loop type="mp4"></video>
+
+        <img src="image/mask.jpg" class="mask" />
+
+        <h2 class="carrouselTexts">SPECTACLES</h2>
+
+        <!--Bouton-->
+        <div class="hero">
+          <span class="scroll-link">
+            <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130"
+              preserveAspectRatio="xMidYMid meet">
+              <g fill="none" fill-rule="evenodd">
+                <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36" />
+                <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <section class="mainContener">
+        <div class="leftContener">
+          <h2>Actuality</h2>
+          <div class="info">
+            <h3>Titre de l'Actualités</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              labore ipsam voluptates odit. Incidunt, corrupti repellat
+              doloribus repudiandae molestiae ipsum sunt nobis cupiditate
+              dolores quibusdam nostrum qui facilis! Vero, vel!
+            </p>
+            <a href="" class="cta ctaRed"><span>Voir</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg></a>
+          </div>
+        </div>
+        <div class="rightContener">
+          <h2>Last Video</h2>
+          <div class="info">
+            <h3>Titre de la vidéo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              labore ipsam voluptates odit. Incidunt, corrupti repellat
+              doloribus repudiandae molestiae ipsum sunt nobis cupiditate
+              dolores quibusdam nostrum qui facilis! Vero, vel!
+            </p>
+            <a href="" class="cta ctaRed"><span>Voir</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg></a>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="sectionGalleries">
+        <h2>Galeries</h2>
+        <div class="galleries">
+          <div><img src="image/imgbiographie.jpg"></div>
+          <div><img src="image/imgbiographie.jpg"></div>
+          <div><img src="image/imgbiographie.jpg"></div>
+          <div><img src="image/imgbiographie.jpg"></div>
+          <div><img src="image/imgbiographie.jpg"></div>
+          <div><img src="image/imgbiographie.jpg"></div>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda. Similique.</p>
+        <a href="gallery.html" class="cta"><span>Voir</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg></a>
+      </section> -->
+      <section class="video-slider">
+        <h2>Click on video for full screen mode</h2>
+        <div class="video-slider-container">
+          <div class="video-slider-box box1">
+            <video src="video/bg1.mp4" autoplay loop muted></video>
+            <div class="video-slider-content">
+              <h3>Slide One</h3>
+            </div>
+          </div>
+          <div class="video-slider-box box2">
+            <video src="video/bg2.mp4" autoplay loop muted></video>
+            <div class="video-slider-content">
+              <h3>Slide Two</h3>
+            </div>
+          </div>
+          <div class="video-slider-box box3">
+            <video src="video/bg3.mp4" autoplay loop muted></video>
+            <div class="video-slider-content">
+              <h3>Slide Three</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div id="site-footer">
+    <%- include('partials/footer') %>
+  </div>
+
+</body>
+<!-- SCRIPT JS -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
+
+</html>
